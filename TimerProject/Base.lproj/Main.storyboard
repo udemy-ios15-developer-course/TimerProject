@@ -16,37 +16,48 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UhF-kg-Znp">
-                                <rect key="frame" x="198" y="437.5" width="18" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fk4-KB-6v0">
-                                <rect key="frame" x="179" y="483.5" width="56" height="31"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="08w-wK-icv">
+                                <rect key="frame" x="20" y="94" width="374" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="YHq-nz-ZqS"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Start"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
                                 <connections>
-                                    <action selector="startClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2ge-ro-GWM"/>
+                                    <action selector="topButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3v5-41-Hfq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="blj-5r-p4u">
+                                <rect key="frame" x="20" y="244" width="374" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="s9e-ry-EBz"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                <connections>
+                                    <action selector="bottomButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="muH-dy-Ndj"/>
                                 </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Fk4-KB-6v0" firstAttribute="top" secondItem="UhF-kg-Znp" secondAttribute="bottom" constant="25" id="TNh-yp-K2N"/>
-                            <constraint firstItem="UhF-kg-Znp" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="UsS-He-ijl"/>
-                            <constraint firstItem="Fk4-KB-6v0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="d9u-TM-ILU"/>
-                            <constraint firstItem="UhF-kg-Znp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hw6-jh-JfS"/>
+                            <constraint firstItem="blj-5r-p4u" firstAttribute="top" secondItem="08w-wK-icv" secondAttribute="bottom" constant="50" id="5TD-me-uJR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="blj-5r-p4u" secondAttribute="trailing" constant="20" id="D6h-jA-sRZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="08w-wK-icv" secondAttribute="trailing" constant="20" id="Eoj-QF-FlQ"/>
+                            <constraint firstItem="08w-wK-icv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="Wxq-c4-Z3c"/>
+                            <constraint firstItem="blj-5r-p4u" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="hAz-kH-4NK"/>
+                            <constraint firstItem="08w-wK-icv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="jRP-hz-5Sq"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="counter" destination="UhF-kg-Znp" id="hjG-uK-w9s"/>
+                        <outlet property="bottomButton" destination="blj-5r-p4u" id="1Nz-5A-Ith"/>
+                        <outlet property="topButton" destination="08w-wK-icv" id="0vx-wi-l1G"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139" y="138"/>
+            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
         </scene>
     </scenes>
     <resources>
